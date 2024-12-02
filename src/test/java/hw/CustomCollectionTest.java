@@ -59,7 +59,7 @@ public class CustomCollectionTest {
     @Test
     public void testBinarySearchWithCustomComparator() {
         List<String> list = Arrays.asList("apple", "banana", "cherry", "date", "fig");
-        Comparator<String> reverseComparator = (a, b) -> b.compareTo(a);
+        Comparator<String> reverseComparator = Comparator.reverseOrder();
 
         // Сортируем список в обратном порядке для проверки поиска с кастомным компаратором
         list.sort(reverseComparator);
